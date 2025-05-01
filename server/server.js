@@ -28,7 +28,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(
     cors({
-        origin: 'http://your-bucket-name.s3-website.ap-south-1.amazonaws.com',
+        origin: 'http://localhost:5173',
         methods: ['GET', 'POST', 'DELETE', 'PUT'],
         allowedHeaders: [
             "content-Type",
