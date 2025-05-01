@@ -16,14 +16,14 @@ const shopReviewRouter = require("./routes/shop/review-routes");
 const commonFeatureRouter = require("./routes/common/ feature-routes.js");
 
 //db
-mongoose.connect('mongodb+srv://shreyaschauhan40:shreyaschauhan40@cluster0.jv7ka.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',{
+mongoose.connect(MONGODB_URI,{
 })
     .then(() => console.log('MongoDB connected'))
     .catch(error => console.log('Error connecting to MongoDB:', error));
 
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 
 app.use(
