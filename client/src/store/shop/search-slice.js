@@ -10,7 +10,7 @@ export const getSearchResults = createAsyncThunk(
   "/order/getSearchResults",
   async (keyword) => {
     const response = await axios.get(
-      `http://localhost:3000/api/shop/search/${keyword}`
+      `http://3.111.243.139:3000/api/shop/search/${keyword}`
     );
 
     return response.data;
