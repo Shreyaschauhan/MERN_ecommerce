@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-
+import { API_URL } from "utils/apiconfig";
 const initialState = {
   isLoading: false,
   featureImageList: [],
@@ -10,7 +10,7 @@ export const getFeatureImages = createAsyncThunk(
   "/order/getFeatureImages",
   async () => {
     const response = await axios.get(
-      `http://3.111.243.139:3000/api/common/feature/get`
+      `https://mern-ecommerce-o8pp.onrender.com/api/common/feature/get`
     );
 
     return response.data;
@@ -21,7 +21,7 @@ export const addFeatureImage = createAsyncThunk(
   "/order/addFeatureImage",
   async (image) => {
     const response = await axios.post(
-      `http://3.111.243.139:3000/api/common/feature/add`,
+      `https://mern-ecommerce-o8pp.onrender.com/api/common/feature/add`,
       { image }
     );
 
