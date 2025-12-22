@@ -30,7 +30,7 @@ connectDB();
 /* -------------------- Middlewares -------------------- */
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://mern-ecomm-pink.vercel.app",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",
