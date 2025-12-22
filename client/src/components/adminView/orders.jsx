@@ -16,7 +16,7 @@ import {
   getAllOrdersForAdmin,
   getOrderDetailsForAdmin,
   resetOrderDetails,
-} from "@/store/admin/ orderslice";
+} from "@/store/admin/orderslice";
 import { Badge } from "../ui/badge";
 
 function AdminOrdersView() {

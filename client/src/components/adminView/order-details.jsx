@@ -9,7 +9,7 @@ import {
   getAllOrdersForAdmin,
   getOrderDetailsForAdmin,
   updateOrderStatus,
-} from "@/store/admin/ orderslice";
+} from "@/store/admin/orderslice";
 import { useToast } from "@/hooks/use-toast";
 
 const initialFormData = {
